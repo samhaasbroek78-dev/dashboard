@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Dashboard Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Deadline and Tax Table Management</h1>
+    <form id="tax-form">
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required>
+
+        <h2>Tax Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tax Type</th>
+                    <th>Rate</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="tax_type" placeholder="e.g. VAT"></td>
+                    <td><input type="number" name="rate" placeholder="e.g. 20" min="0"></td>
+                    <td><input type="text" name="description" placeholder="Description"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="tax_type" placeholder="e.g. Income Tax"></td>
+                    <td><input type="number" name="rate" placeholder="e.g. 30" min="0"></td>
+                    <td><input type="text" name="description" placeholder="Description"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
